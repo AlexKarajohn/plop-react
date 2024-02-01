@@ -1,0 +1,8 @@
+{{#if data.ts }}import { FC } from 'react';{{~/if }}
+{{#if data.ts }}{{#if data.props}}import { {{properCase name}}Props } from './types/types.ts';{{/if}}{{/if }}
+
+{{#if data.namedExport}}export {{/if}}const {{properCase name}} {{#if data.ts}}: FC {{/if}}= ({{#if data.props}}props{{#if data.ts }}:{{properCase name}}Props{{/if }}{{/if }}) => { 
+    return <></>
+}
+
+{{#unless data.namedExport}}export default {{properCase name}}{{/unless}}

@@ -1,0 +1,8 @@
+import {{#if data.namedExport}} { {{/if}}{{properCase name}}{{#if data.namedExport}} } {{/if}} from '.{{#if data.separateFolder}}/__TEST__{{/if}}/{{properCase name}}';
+{{#if data.testingLibary.testing-library-react}}import { render } from '@testing-library/react';{{/if}}
+
+describe('{{properCase name}} component:',()=>{
+    it('should render',()=>{
+       {{~#if data.testingLibary.testing-library-react}} render(<{{properCase name}}/>){{/if}}
+    })
+})

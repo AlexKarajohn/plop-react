@@ -1,0 +1,22 @@
+{
+  "name": "akaragiannis-plop-react-gen",
+  "version": "0.0.1",
+  "description": "Plop Generator for all things react",
+  "type": "module",
+  "bin": {
+    "akaragiannis-plop-react-gen": "./src/index.js"
+  },
+  "scripts": {
+    "plop": "plop"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash.merge": "^4.6.2",
+    "minimist": "^1.2.8",
+    "plop": "^4.0.1"
+  },
+  "devDependencies": {
+    "semantic-release": "^23.0.0"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "plop-react",
+  "version": "0.0.1",
+  "private": false,
+  "author": "Alexandros Karagiannis",
+  "license": "ISC",
+  "workspaces": [
+    "packages/plop-react"
+  ],
+  "dependencies": {
+    "jsonschema": "^1.4.1"
+  }
+}
