@@ -14,9 +14,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: cache installed dependencies
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         id: get-node-modules
         with:
           path: node_modules
@@ -26,7 +26,7 @@ jobs:
         run: npm install
       - name: upload test report
         if: failure() && steps.cl.outcome == 'failure'
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: report
           path: test.json
@@ -45,13 +45,13 @@ jobs:
     environment: main
     steps:
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: "lts/*"
       - name: Checkout repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: cache installed dependencies
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         id: get-node-modules
         with:
           path: node_modules
