@@ -7,7 +7,7 @@ export const actions = (data, config) => {
     path: `${pathToComponent}/${data.name[0].toUpperCase() + data.name.slice(1)}.${
       config.language
     }x`,
-    templateFile: "src/generators/component/component.hbs",
+    templateFile: "./generators/component/component.hbs",
     data: {
       data: {
         ...config,
@@ -22,7 +22,7 @@ export const actions = (data, config) => {
   actions.push({
     type: "add",
     path: `${pathToComponent}/types/types.ts`,
-    templateFile: "src/generators/component/component.types.hbs",
+    templateFile: "./generators/component/component.types.hbs",
     data: {
       data: {
         ...config,
@@ -38,7 +38,7 @@ export const actions = (data, config) => {
     actions.push({
       type: "add",
       path,
-      templateFile: "src/generators/component/component.test.hbs",
+      templateFile: "./generators/component/component.test.hbs",
       data: {
         data: {
           ...config,
