@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/AlexKarajohn/plop-react/compare/v1.0.2...v1.0.3) (2024-02-14)
+
+
+### Bug Fixes
+
+* **path:** updated generator path ([b51fe1b](https://github.com/AlexKarajohn/plop-react/commit/b51fe1be69487f22c412c4cdae688f0b3c9f3e19))
+
 ## [1.0.2](https://github.com/AlexKarajohn/plop-react/compare/v1.0.1...v1.0.2) (2024-02-14)
 
 
