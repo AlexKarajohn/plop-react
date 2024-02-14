@@ -1,0 +1,17 @@
+{{#if data.ts }}import { Component } from 'react';{{~/if }}
+{{#if data.ts }}{{#if data.props}}import { {{properCase name}}Props, {{properCase name}}State } from './types/types.ts';{{/if}}{{/if }}
+
+{{#if data.namedExport}}export {{/if}}const {{properCase name}} = class {{properCase name}} extends Component<{{properCase name}}Props,  {{properCase name}}State> {
+  state: {{properCase name}}State = {
+
+  };
+  render() {
+    return (
+      <>
+
+      </>
+    );
+  }
+}
+
+{{#unless data.namedExport}}export default {{properCase name}}{{/unless}}

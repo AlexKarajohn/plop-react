@@ -23,7 +23,7 @@ export const prompts = (config) => {
       name: "component.config",
       message: "Select what you want your component to have:",
       loop: true,
-      choices: (data) => [
+      choices: () => [
         { name: "Props", value: "props" },
         { name: "CSS", value: "css" },
         { name: "Folders", value: "folders" },
@@ -37,12 +37,11 @@ export const prompts = (config) => {
       name: "component.config.folders",
       message: "Select what folders you want your component to have:",
       loop: true,
-      choices: () => [
-        { name: "Utilities", value: "utils" },
-        { name: "Components", value: "components" },
-        { name: "Hooks", value: "hooks" },
-        { name: "Context", value: "context" },
-      ],
+      choices: (data) => {
+        const options = [{ name: "Utilities", value: "utils" }, { name: "Components", value: "components" },{ name: "Context", value: "context" }];
+        if(data.component.type === 'fc') options.push({ name: "Hooks", value: "hooks" })
+        return options;
+      },
     },
   ];
 };
