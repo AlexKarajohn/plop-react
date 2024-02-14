@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/AlexKarajohn/plop-react/compare/v1.0.3...v1.1.0) (2024-02-14)
+
+
+### Features
+
+* **comp:** added class components gen ([83258a5](https://github.com/AlexKarajohn/plop-react/commit/83258a5645076a12c5d6011477fc489da08c7b4a))
+
 ## [1.0.3](https://github.com/AlexKarajohn/plop-react/compare/v1.0.2...v1.0.3) (2024-02-14)
 
 
