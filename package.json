@@ -6,8 +6,5 @@
   "license": "ISC",
   "workspaces": [
     "packages/plop-react"
-  ],
-  "dependencies": {
-    "jsonschema": "^1.4.1"
-  }
+  ]
 }

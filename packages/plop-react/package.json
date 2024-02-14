@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "jsonschema": "^1.4.1",
     "lodash.merge": "^4.6.2",
     "minimist": "^1.2.8",
     "plop": "^4.0.1"
