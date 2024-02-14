@@ -1,6 +1,6 @@
 {
   "name": "akaragiannis-plop-react-gen",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Plop Generator for all things react",
   "type": "module",
   "bin": {
