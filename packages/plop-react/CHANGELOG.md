@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/AlexKarajohn/plop-react/compare/v1.1.1...v1.1.2) (2024-02-15)
+
+
+### Bug Fixes
+
+* **config:** made finding the config file dynamic ([c00a0e0](https://github.com/AlexKarajohn/plop-react/commit/c00a0e08224ec5790b699ee9edb52f2bc2e61e07))
+
 ## [1.1.1](https://github.com/AlexKarajohn/plop-react/compare/v1.1.0...v1.1.1) (2024-02-15)
 
 
