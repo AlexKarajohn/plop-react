@@ -1,6 +1,4 @@
 import merge from "lodash.merge";
-
-import process from 'process'
 import { defaultConfig } from './generators/config/default.js'
 import { prompts as componentPrompts } from "./generators/component/prompts.js";
 import { actions as componentActions } from "./generators/component/actions.js";
@@ -10,13 +8,14 @@ import { prompts as functionPrompts } from "./generators/function/prompts.js";
 import { prompts as hookPrompts } from "./generators/hook/prompts.js";
 import { validateConfig } from "./generators/config/validator.js";
 import { helpers } from "./helpers/helpers.js";
-
-const language = undefined;
+import { getConfig } from "./utils/getConfig.js";
 
 export default async function (plop) {
+  console.log('-------------React Code Generation-------------')
   let externalConfig;
+
   try {
-    externalConfig = (await import(process.cwd() + "/reactgen.config.js")).default;
+    externalConfig = getConfig()
     const { isValid, validationErrors } = validateConfig(externalConfig);
     
     if (!isValid) {
