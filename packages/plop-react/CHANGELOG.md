@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/AlexKarajohn/plop-react/compare/v1.1.0...v1.1.1) (2024-02-15)
+
+
+### Bug Fixes
+
+* **js:** removed ts types from fc component ([3c69e75](https://github.com/AlexKarajohn/plop-react/commit/3c69e758903ebfa9f561eba053f4bee21c0fe968))
+
 # [1.1.0](https://github.com/AlexKarajohn/plop-react/compare/v1.0.3...v1.1.0) (2024-02-14)
 
 
