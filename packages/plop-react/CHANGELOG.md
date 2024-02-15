@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/AlexKarajohn/plop-react/compare/v1.1.2...v1.1.3) (2024-02-15)
+
+
+### Bug Fixes
+
+* **config:** update config fetching ([d130ad2](https://github.com/AlexKarajohn/plop-react/commit/d130ad295ebcf7ac57c909a4440589caa653c243))
+
 ## [1.1.2](https://github.com/AlexKarajohn/plop-react/compare/v1.1.1...v1.1.2) (2024-02-15)
 
 
