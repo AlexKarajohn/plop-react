@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/AlexKarajohn/plop-react/compare/v1.1.3...v1.1.4) (2024-02-15)
+
+
+### Bug Fixes
+
+* **component:** added missing import to class component hbs ([b600b9a](https://github.com/AlexKarajohn/plop-react/commit/b600b9af80630681319417eab81802a528d0aac3))
+
 ## [1.1.3](https://github.com/AlexKarajohn/plop-react/compare/v1.1.2...v1.1.3) (2024-02-15)
 
 
