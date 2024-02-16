@@ -2,7 +2,7 @@ import {{#if data.namedExport}} { {{camelCase name}}{{#if data.ts}}{{#if data.pa
 
 describe('{{camelCase name}} component:',()=>{
     it('should return null',()=>{
-       {{#if data.params}}const params:{{camelCase name}}Params = {}{{/if}}
+       {{#if data.params}}const params{{#if data.ts}}:{{camelCase name}}Params{{/if}} = {}{{/if}}
        const expected = {{camelCase name}}({{#if data.params}}params{{/if}})
        expect(expected).toBe(null)
     })
