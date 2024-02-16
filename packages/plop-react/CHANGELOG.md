@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/AlexKarajohn/plop-react/compare/v1.2.0...v1.2.1) (2024-02-16)
+
+
+### Bug Fixes
+
+* **function:** removed typed parameters from js hbs ([e67efbe](https://github.com/AlexKarajohn/plop-react/commit/e67efbe93e39bb704609803801a00023c6bf03c6))
+
 # [1.2.0](https://github.com/AlexKarajohn/plop-react/compare/v1.1.4...v1.2.0) (2024-02-16)
 
 
