@@ -1,0 +1,9 @@
+{{#if data.ts}}{{#if data.params}}export interface {{camelCase name}}Params{
+
+}{{/if}}{{/if}}
+
+{{#if data.namedExport}}export {{/if}}const {{camelCase name}} = ({{#if data.params}}params{{#if data.ts }}:{{camelCase name}}Params{{/if }}{{/if }}){{#if data.ts}}: null {{/if}} => { 
+    return null
+}
+
+{{#unless data.namedExport}}export default {{camelCase name}}{{/unless}}

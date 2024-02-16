@@ -1,0 +1,9 @@
+import {{#if data.namedExport}} { {{camelCase name}}{{#if data.ts}}{{#if data.params}}, {{camelCase name}}Params{{/if}}{{/if}} } {{/if}} {{#unless data.namedExport}}{{camelCase name}} ,{{#if data.ts}}{{#if data.params}} { {{camelCase name}}Params } {{/if}}{{/if}}{{/unless}}from '.{{#if data.separateFolder}}/__TEST__{{/if}}/{{camelCase name}}';
+
+describe('{{camelCase name}} component:',()=>{
+    it('should return null',()=>{
+       {{#if data.params}}const params:{{camelCase name}}Params = {}{{/if}}
+       const expected = {{camelCase name}}({{#if data.params}}params{{/if}})
+       expect(expected).toBe(null)
+    })
+})

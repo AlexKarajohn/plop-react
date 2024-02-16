@@ -14,14 +14,21 @@ export const prompts = (config) => {
       type: "list",
       name: "category",
       message: "Select what you want to create:",
-      choices: ["Component",
-        // "Function", "Hook", "Context"
+      choices: [
+        "Component",
+        "Function",
+        //"Hook", "Context"
       ],
     },
     {
       type: "input",
       name: "path",
-      message: "Relative path to insert new files:"
+      message: "Relative path to insert new files:",
+    },
+    {
+      type: "input",
+      name: "name",
+      message: "Insert Name",
     },
   ];
 };

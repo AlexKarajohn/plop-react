@@ -4,12 +4,6 @@ export const prompts = () => {
   return [
     {
       when: (data) => isComponent(data),
-      type: "input",
-      name: "name",
-      message: "Component Name",
-    },
-    {
-      when: (data) => isComponent(data),
       type: "list",
       name: "component.type",
       message: "Select what type of component you want to create:",

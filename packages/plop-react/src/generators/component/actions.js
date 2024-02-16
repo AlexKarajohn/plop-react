@@ -6,6 +6,7 @@ export const actions = (data, config) => {
   /**
    * Create Data Configuration for Actions
    */
+
   const customdata = {
     ...config,
     props: data.component.config.includes("props"),
@@ -14,6 +15,7 @@ export const actions = (data, config) => {
     namedExport: config.component.namedExport,
     class: data.component.type === "class",
     separateFolder: config.component.testFile.separateFolder,
+    separateTypes: config.component.separateTypes,
     testingLibary: {
       "testing-library-react":
         config.component.testFile.testingLibary === "@testing-library/react",
@@ -32,7 +34,7 @@ export const actions = (data, config) => {
       }.${config.language}x`,
       templateFile: "./generators/component/component.fc.hbs",
       data: {
-        data:customdata,
+        data: customdata,
       },
     });
   /**
@@ -45,7 +47,7 @@ export const actions = (data, config) => {
       }.${config.language}x`,
       templateFile: "./generators/component/component.class.hbs",
       data: {
-        data:customdata,
+        data: customdata,
       },
     });
   /**
@@ -53,6 +55,7 @@ export const actions = (data, config) => {
    */
   if (
     config.language === "ts" &&
+    config.component.separateTypes &&
     (data.component.config.includes("props") || data.component.type === "class")
   )
     actions.push({
@@ -60,7 +63,7 @@ export const actions = (data, config) => {
       path: `${pathToComponent}/types/types.ts`,
       templateFile: "./generators/component/component.types.hbs",
       data: {
-        data:customdata,
+        data: customdata,
       },
     });
   /**
@@ -77,23 +80,23 @@ export const actions = (data, config) => {
       path,
       templateFile: "./generators/component/component.test.hbs",
       data: {
-        data:customdata,
+        data: customdata,
       },
     });
-    /**
-     * Add Folders
-     */
-    if (
-      data.component.config.folders &&
-      data.component.config.folders.length > 0
-    ) {
-      data.component.config.folders.forEach((folder) => {
-        actions.push({
-          type: "add",
-          path: `${pathToComponent}/${folder}/git.keep`,
-        });
+  }
+  /**
+   * Add Folders
+   */
+  if (
+    data.component.config.folders &&
+    data.component.config.folders.length > 0
+  ) {
+    data.component.config.folders.forEach((folder) => {
+      actions.push({
+        type: "add",
+        path: `${pathToComponent}/${folder}/git.keep`,
       });
-    }
+    });
   }
   return actions;
 };

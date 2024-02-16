@@ -16,6 +16,17 @@ const schema = {
     language: {
       enum: ["js", "ts"],
     },
+    function: {
+      type: "object",
+      properties: {
+        testFile: {
+          ...testFile,
+        },
+        namedExport: {
+          type: "boolean",
+        },
+      },
+    },
     component: {
       type: "object",
       properties: {
@@ -26,6 +37,9 @@ const schema = {
           },
         },
         namedExport: {
+          type: "boolean",
+        },
+        separateTypes: {
           type: "boolean",
         },
       },
