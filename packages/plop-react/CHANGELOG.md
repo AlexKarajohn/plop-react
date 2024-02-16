@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/AlexKarajohn/plop-react/compare/v1.1.4...v1.2.0) (2024-02-16)
+
+
+### Features
+
+* **function:** added function generator ([344ce46](https://github.com/AlexKarajohn/plop-react/commit/344ce4663a39719c5ec10a98b843229887151dcd))
+
 ## [1.1.4](https://github.com/AlexKarajohn/plop-react/compare/v1.1.3...v1.1.4) (2024-02-15)
 
 
